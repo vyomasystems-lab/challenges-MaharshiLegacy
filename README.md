@@ -123,7 +123,7 @@ Based on the above test input and analysing the design, we see the following
 ## Design Fix
 Updating the design and re-running the test makes the test pass.
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/109369461/182193362-1db0fe2e-e67d-4261-b97d-e143eda53f1f.png)
 
 
 ## Verification Strategy
