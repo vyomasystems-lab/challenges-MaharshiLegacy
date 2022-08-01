@@ -123,6 +123,7 @@ Based on the above test input and analysing the design, we see the following
 ## Design Fix
 Updating the design and re-running the test makes the test pass.
 
+![image](https://user-images.githubusercontent.com/109369461/182198952-e5deabaf-7a9a-4fcb-b295-ba8e068836e3.png)
 
 
 ## Verification Strategy
