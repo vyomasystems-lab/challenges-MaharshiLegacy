@@ -44,9 +44,9 @@ reg [2:0]  readCounter = 0,
 
            writeCounter = 0; 
 
-assign EMPTY = (Count==0)? 1'b1:1'b0; 
+assign EMPTY = (Count==0)? 1'b1:1'b1;//bugg 
 
-  assign FULL = (Count==8)? 1'b1:1'b1; //bugg
+assign FULL = (Count==8)? 1'b1:1'b1; //bugg
 
 always @ (posedge Clk) 
 

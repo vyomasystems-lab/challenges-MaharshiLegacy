@@ -1,13 +1,13 @@
-# See LICENSE.vyoma for details
+ #See LICENSE.vyoma for details
 
 TOPLEVEL_LANG ?= verilog
 
 PWD=$(shell pwd)
 
-VERILOG_SOURCES = $(PWD)/               # provide your design path
+VERILOG_SOURCES = $(PWD)/FIFO.v
 
-TOPLEVEL :=           # design file
-MODULE   :=     # test file
+TOPLEVEL := FIFObuffer          # design
+MODULE   := test_FIFO.py     # test
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 

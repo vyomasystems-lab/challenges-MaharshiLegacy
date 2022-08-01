@@ -18,17 +18,11 @@ async def test_seq_bug1(dut):
     cocotb.start_soon(clock.start())        # Start the clock
 
       # reset
-    dut.reset.value = 1
-    await FallingEdge(dut.clk)
-    dut.reset.value = 0
-    await FallingEdge(dut.clk) 
-    dut.inp_bit.value=1
-    await FallingEdge(dut.clk) 
-    dut.inp_bit.value=0
-    await FallingEdge(dut.clk) 
-    dut.inp_bit.value=1
-    await FallingEdge(dut.clk) 
-    dut.inp_bit.value=1
-    await FallingEdge(dut.clk) 
-    assert dut.seq_seen.value == 1, "FSM sequence for {Current_state}(current state)== {SEQ1011}(detect_seq_state) but  {Seq_seen}(seq_seen) != 1".format( Current_state=int(dut.current_state.value),SEQ1011=dut.SEQ_1011.value,Seq_seen=dut.seq_seen.value)
+    #dut.EN.value = 1
+    #await FallingEdge(dut.clk) 
+    #dut.dataIn.value = 10
+
+    #await FallingEdge(dut.clk) 
+    
+    #assert dut.EMPTY.value == 0, "WE HAVE NOT GIVEN INPUT DATA TO FIFO THAN ALSO FULL SHOW HIGH LOGIC --> {full}= ".format( full=int(dut.EMPTY.value))
 
